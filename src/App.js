@@ -165,7 +165,7 @@ const PdfFillerApp = () => {
     if (file.type !== 'text/csv' && !file.name.endsWith('.csv')) {
       setError("Please upload a CSV file");
       return;
-    } [processCsvData]); // add the missing dependency
+    } [processCsvData]; // add the missing dependency
     
     try {
       // Read the file
